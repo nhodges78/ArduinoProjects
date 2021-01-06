@@ -4,7 +4,7 @@ This project uses 3D model and printing files created by [jorgenp on Thingiverse
 
 ## Circuit Description
 
-The circuit is controlled by an Elegoo Uno R3 and is shown in this image, detailed further in the corresponding schematic.
+The circuit is controlled by an Elegoo Uno R3 and is shown in [this image](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.jpg), detailed further in the corresponding [schematic](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.png).
 
 ### Components
 * (5) 220 ohm resistors
