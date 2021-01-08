@@ -12,12 +12,12 @@ void setup() {
   pinMode(bluePin, OUTPUT); //blue led
   pinMode(greenPin, OUTPUT); //green led
   pinMode(redPin, OUTPUT); //red led
-  pinMode(cyclePin, INPUT);  //pushbutton that cycles light colors
-  pinMode(brightnessPin, INPUT); //pushbutton that changes light brightness
+  pinMode(cyclePin, INPUT_PULLUP);  //pushbutton that cycles light colors
+  pinMode(brightnessPin, INPUT_PULLUP); //pushbutton that changes light brightness
 }
 
 void loop() {
-  if(digitalRead(cyclePin)==HIGH){ //pushbutton1 pressed, cycle colors
+  if(digitalRead(cyclePin)==LOW){ //pushbutton1 pressed, cycle colors
     delay(250); //pause to mitigate button bounce
 
     if(pressCount1>6){ //reset presses
@@ -52,7 +52,7 @@ void loop() {
     pressCount1++;
   }//end color selection
 
-  if(digitalRead(brightnessPin)==HIGH){ //pushbutton2 pressed, change brightness
+  if(digitalRead(brightnessPin)==LOW){ //pushbutton2 pressed, change brightness
     delay(250);
     currColor=pressCount1; //track light color setting
     

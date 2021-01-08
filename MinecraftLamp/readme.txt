@@ -10,13 +10,13 @@
 
 ** (1) 220 ohm resistor for each (R, G, B) pin of the LED, common pin to ground, each RGB pin controlled by a PWM output pin (9, 10, 11, respectively)
 
-** (2) pushbuttons connected to unique 10 kohm pulldown resistors; when pushed, connect 5V through unique 220 ohm resistors to digital input pin 8 (color cycle) and 7 (brightness cycle)
+** (2) pushbuttons connected to pin 7 (brightness control) and pin 8 (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins.
 
 ** Pushing the left-hand button (closer to RGB LED) cycles through all major colors of "ore blocks" (brownish, yellow, cyan, green, red, blue) and one extra color (purple) just for fun
 
 ** A second pushbutton with connections identical to the first is connected to digital input pin 7 to control brightness of the LED by tweaking PWM output values to a duty cycle of 10%
 
-* Program developed in Arduino IDE ver. 1.8.13 on 5 JAN 2021
+* Program developed in Arduino IDE ver. 1.8.13 on 8 JAN 2021
 
 ** Program begins by declaring necessary globals:
 
