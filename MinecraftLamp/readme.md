@@ -8,14 +8,13 @@ The circuit is controlled by an Elegoo Uno R3 and is shown in [this image](https
 
 ### Components
 * (5) 220 ohm resistors
-* (2) 10 kohm resistors
 * (1) common-cathode RGB LED
 * (2) pushbuttons
 
 ### Connections and Functionality
 * (1) 220 ohm resistor for each (R, G, B) pin of the LED with common pin to ground. Each RGB pin is controlled by a PWM output pin (9, 10, 11, respectively).
 
-* (2) pushbuttons connected to unique 10 kohm pulldown resistors. When pushed, each connects 5V through unique 220 ohm resistors to digital input pins 8 (color cycle) and 7 (brightness cycle).
+* (2) pushbuttons connected to pin 7 (brightness control) and pin 8 (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins.
 
 * Pushing the left-hand button (digital pin 8, closer to RGB LED) cycles through all major colors of "ore blocks" (brownish, yellow, cyan, green, red, blue) and one extra color (purple) just for fun.
 
