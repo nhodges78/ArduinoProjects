@@ -7,14 +7,14 @@ This project uses 3D model and printing files created by [jorgenp on Thingiverse
 The circuit is controlled by an Elegoo Uno R3 and is shown in [this image](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.jpg), detailed further in the corresponding [schematic](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.png). A brief functional demonstration of the working circuit can be found [on YouTube](https://www.youtube.com/watch?v=98_461uSXLU).
 
 ### Components
-* (5) 220 ohm resistors
+* (3) 220 ohm resistors
 * (1) common-cathode RGB LED
 * (2) pushbuttons
 
 ### Connections and Functionality
 * (1) 220 ohm resistor for each (R, G, B) pin of the LED with common pin to ground. Each RGB pin is controlled by a PWM output pin (9, 10, 11, respectively).
 
-* (2) pushbuttons connected to pin 7 (brightness control) and pin 8 (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins.
+* (2) pushbuttons with two pins connected to pin 7 (brightness control) and pin 8 (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins and two pins connected to common ground.
 
 * Pushing the left-hand button (digital pin 8, closer to RGB LED) cycles through all major colors of "ore blocks" (brownish, yellow, cyan, green, red, blue) and one extra color (purple) just for fun.
 
