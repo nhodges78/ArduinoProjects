@@ -4,7 +4,7 @@ This project uses 3D model and printing files created by [jorgenp on Thingiverse
 
 ## Circuit Description
 
-The circuit is controlled by an Elegoo Uno R3 and is shown in [this image](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.jpg), detailed further in the corresponding [schematic](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.png). A brief functional demonstration of the working circuit can be found [on YouTube](https://www.youtube.com/watch?v=98_461uSXLU).
+The test circuit was controlled by an Elegoo Uno R3 (Arduino Uno equivalent), shown in [this image](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.jpg), and is detailed further in the corresponding [schematic](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev1.png). A brief functional demonstration of the working circuit can be found [on YouTube](https://www.youtube.com/watch?v=98_461uSXLU). Pinouts and functionality are similar enough between Arduino Uno and Arduino Nano (same microcontroller), so the smaller footprint of the Nano is exploited to save space inside the lamp. The current version of the circuit is controlled by a Makefun Nano (Arduino Nano equivalent), shown in [this image](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Rev2_Nano.jpg), and is detailed a little more in the corresponding [schematic](https://github.com/nhodges78/ArduinoProjects/blob/master/MinecraftLamp/Circuit/Circuit_Schematic_Rev2_Nano.png).
 
 ### Components
 * (3) 220 ohm resistors
@@ -12,13 +12,13 @@ The circuit is controlled by an Elegoo Uno R3 and is shown in [this image](https
 * (2) pushbuttons
 
 ### Connections and Functionality
-* (1) 220 ohm resistor for each (R, G, B) pin of the LED with common pin to ground. Each RGB pin is controlled by a PWM output pin (9, 10, 11, respectively).
+* (1) 220 ohm resistor for each (R, G, B) pin of the LED with common pin to ground. Each RGB pin is controlled by a PWM output pin (9, 10, 11, respectively, for the Uno and Nano).
 
-* (2) pushbuttons with two pins connected to pin 7 (brightness control) and pin 8 (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins and two pins connected to common ground.
+* (2) pushbuttons with two pins connected to digital pin 7 of the Uno or pin 3 of the Nano (brightness control) and digital pin 8 of the Uno or pin 2 of the Nano (color cycle) with internal 20 kohm - 50 kohm pull-up resistors enabled for the input pins and two pins connected to common ground.
 
-* Pushing the left-hand button (digital pin 8, closer to RGB LED) cycles through all major colors of "ore blocks" (brownish, yellow, cyan, green, red, blue) and one extra color (purple) just for fun.
+* Pushing the left-hand button (digital pin 8 for Uno or 2 for Nano) cycles through all major colors of "ore blocks" (brownish, yellow, cyan, green, red, blue) and one extra color (purple) just for fun.
 
-* A second pushbutton (digital pin 7, further from RGB LED) with connections identical to the first cycles through brightness levels of the LED by tweaking PWM output values of pins 9, 10, and 11 to alternate between duty cycles of 100% (full bright) and 10% (dimmed).
+* A second pushbutton (digital pin 7 for Uno or 3 for Nano) with connections identical to the first cycles through brightness levels of the LED by tweaking PWM output values of pins 9, 10, and 11 to alternate between duty cycles of 100% (full bright) and 10% (dimmed).
 
 ## Program Description
 The program begins by declaring necessary globals:
