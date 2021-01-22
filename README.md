@@ -1,2 +1,2 @@
 # ArduinoProjects
-For when I feel like making things.
+For when I have time to make fun things.
