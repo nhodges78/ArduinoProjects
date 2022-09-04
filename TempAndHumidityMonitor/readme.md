@@ -25,7 +25,7 @@ I did not change much of the example code provided for controlling the DHT senso
 * General information about using the DHT11 resistive-type temperature/humidity module: https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/
 ** Note that the connections on this site tutorial do not follow the datasheet's layout - look at your component and the datasheet to ensure you're connecting properly 
 ** Note I am not using the same DHT program that this tutorial uses, the creater of that code points to another one [here](https://github.com/markruys/arduino-DHT).
-*About Humidity Sensors: https://in.element14.com/sensor-humidity-sensor-technology
+* About Humidity Sensors: https://in.element14.com/sensor-humidity-sensor-technology
 * About Temperature Sensors: https://in.element14.com/sensor-temperature-sensor-technology?ICID=I-CT-TP-BROWSE-8
 
 
