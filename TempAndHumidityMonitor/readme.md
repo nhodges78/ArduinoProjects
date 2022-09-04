@@ -4,7 +4,7 @@
 
 ## Project Summary
 
-Whenever winter rolls around, I find that my nose bleeds much more often. I believe this is because heating the air in my apartment also dries it out, though meterology isn't one of my strong suits. Essentially, the air has a moisture saturation point that varies by temperature. Warm air can carry more moisture than cold air, so when you heat cold air, the moisture content stays relatively the same, resulting in a decrease in relative humidity of the air. Anyways, I found an old Elegoo temperature/humidity module in my circuit box and thought it'd be a shame if it kept sitting in there unused. So, here we are.
+Whenever winter rolls around, I find that my nose bleeds much more often because of the drier air, courtesy of my heater. Essentially, the air has a moisture saturation point that varies by temperature. Warm air can carry more moisture than cold air, so when you heat cold air, the moisture content stays relatively the same, resulting in a decrease in relative humidity of the air. Anyways, I found an old Elegoo temperature/humidity module in my circuit box and thought it'd be a shame if it kept sitting in there unused. So, here we are.
 
 ## Circuit Connections
 
